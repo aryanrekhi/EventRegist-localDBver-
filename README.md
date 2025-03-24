@@ -74,7 +74,7 @@ Replace the existing connection string with your actual SQL Server details:
 
 ```json
 "ConnectionStrings": {
-  "DefaultConnection": "Server=localhost;Database=EventRegistrationDB;Trusted_Connection=True;"
+  "DefaultConnection": "Server=localhost;Database=EventRegistrationDB;Trusted_Connection=True;TrustServerCertificate=True;"
 }
 ```
 
@@ -82,7 +82,7 @@ For SQL Server Express:
 
 ```json
 "ConnectionStrings": {
-  "DefaultConnection": "Server=localhost\\SQLEXPRESS;Database=EventRegistrationDB;Trusted_Connection=True;"
+  "DefaultConnection": "Server=localhost\\SQLEXPRESS;Database=EventRegistrationDB;Trusted_Connection=True;TrustServerCertificate=True;"
 }
 ```
 
@@ -90,7 +90,7 @@ For SQL authentication:
 
 ```json
 "ConnectionStrings": {
-  "DefaultConnection": "Server=localhost;Database=EventRegistrationDB;User Id=your_username;Password=your_password;"
+  "DefaultConnection": "Server=localhost;Database=EventRegistrationDB;User Id=your_username;Password=your_password;TrustServerCertificate=True;"
 }
 ```
 
